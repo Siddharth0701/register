@@ -1,0 +1,23 @@
+<p>register user!</p>
+<form method="post">
+<label for="Firstname"> Firstname</label>
+<input type="text" [formControl]="firstname" >
+<br>
+<label for="Lastname"></label>
+<input type="text" [formControl]="lastname" ><br>
+<label for="Email"></label>
+<input type="text" [formControl]="email" ><br>
+<label for="Mobile"></label>
+<input type="text" [formControl]="mobilenumber" ><br>
+<p>Please select Gender:</p>
+  <input type="radio"   [formControl]="gender" name="malegender" value="Male">
+  <label for="male">Male</label><br>
+  <input type="radio" [formControl]="gender"  name="femalegender" value="Female">
+  <label for="female">Female</label><br>
+<label for="Password"></label>
+<input type="password" [formControl]="password" ><br>
+<label for="Password"></label>
+<input type="password" [formControl]="repassword" ><br>
+<button type="button"  (click)="save()"> Create user</button>
+</form>
+
